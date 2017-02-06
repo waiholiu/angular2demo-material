@@ -1,0 +1,15 @@
+<p>
+  home works!
+</p>
+<button md-button (click)="onClickMe()">Click me!</button>
+
+
+
+
+<md-list>
+  <md-list-item *ngFor="let person of myPeople" >
+      <a [routerLink]="['/profile', person.Id]"> {{person.Name}} (Age {{person.Age}})  </a>
+
+  </md-list-item>
+  
+</md-list>
